@@ -30,7 +30,7 @@ app.use("/uploads", express.static(path.join("uploads")));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.send("hello");
+  res.send("Server is running...");
 });
 app.use(bodyParser.json());
 
